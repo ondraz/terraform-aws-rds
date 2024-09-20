@@ -142,3 +142,9 @@ variable "enabled_cloudwatch_logs_exports" {
   default     = []
   type        = list(string)
 }
+
+variable "storage_type" {
+  description = "The type of storage to use"
+  type        = string
+  default     = "gp2"
+}
